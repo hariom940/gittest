@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.6.6deb5
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jul 08, 2020 at 02:15 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.3
+-- Host: localhost:3306
+-- Generation Time: Jul 08, 2020 at 10:48 PM
+-- Server version: 5.7.29-0ubuntu0.18.04.1
+-- PHP Version: 5.6.40-29+ubuntu18.04.1+deb.sury.org+1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -34,7 +32,7 @@ CREATE TABLE `failed_jobs` (
   `queue` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `failed_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `failed_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -76,7 +74,7 @@ CREATE TABLE `oauth_access_tokens` (
   `user_id` bigint(20) UNSIGNED DEFAULT NULL,
   `client_id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `scopes` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `scopes` text COLLATE utf8mb4_unicode_ci,
   `revoked` tinyint(1) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -93,7 +91,7 @@ CREATE TABLE `oauth_auth_codes` (
   `id` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `user_id` bigint(20) UNSIGNED NOT NULL,
   `client_id` bigint(20) UNSIGNED NOT NULL,
-  `scopes` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `scopes` text COLLATE utf8mb4_unicode_ci,
   `revoked` tinyint(1) NOT NULL,
   `expires_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -172,9 +170,9 @@ CREATE TABLE `tasks` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `task_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Due_Date` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Date` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `end_date` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '1=pending,2=complete,3=overdue',
+  `start_date` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `sub_task` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `assign_to` int(11) DEFAULT NULL,
   `created_by` int(11) DEFAULT NULL,
@@ -186,8 +184,9 @@ CREATE TABLE `tasks` (
 -- Dumping data for table `tasks`
 --
 
-INSERT INTO `tasks` (`id`, `task_name`, `name`, `Due_Date`, `Status`, `Date`, `sub_task`, `assign_to`, `created_by`, `created_at`, `updated_at`) VALUES
-(1, 'Crud', 'Vishnu', '2020-07-10', '1', '2020-07-09', 'Read,Update', NULL, NULL, '2020-07-08 06:39:45', '2020-07-08 06:39:45');
+INSERT INTO `tasks` (`id`, `task_name`, `name`, `end_date`, `status`, `start_date`, `sub_task`, `assign_to`, `created_by`, `created_at`, `updated_at`) VALUES
+(1, 'Crud', 'Vishnu', '2020-07-10', '1', '2020-07-09', 'Read,Update,Delete', NULL, NULL, '2020-07-08 06:39:45', '2020-07-08 09:24:20'),
+(2, 'banner', 'PWA', '2020-07-09', '1', '2020-07-08', 'report first,report second', NULL, NULL, '2020-07-08 09:04:16', '2020-07-08 09:04:16');
 
 -- --------------------------------------------------------
 
@@ -200,9 +199,8 @@ CREATE TABLE `users` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
-  `Status` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `user_type` enum('ADMIN','USER') COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_type` enum('ADMIN','USER') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'USER',
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -212,9 +210,12 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `Status`, `password`, `user_type`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Hariom', 'h@gmail.com', NULL, 'pending', '$2y$10$yP/jCdm365s6Ym9BZQlqGOO.VfFj1dv7laHsYwsWasWsg3dkkbTtu', 'ADMIN', NULL, '2020-07-04 02:40:17', '2020-07-04 02:40:17'),
-(2, 'Har', 'g@gmail.com', NULL, '', '$2y$10$w2zFq4UJI16mAYntKPF0NOM458kvxog8muroUcWaFOosp1fqv/ZX6', 'USER', NULL, '2020-07-04 04:51:26', '2020-07-04 04:51:26');
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `user_password`, `user_type`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'Hariom', 'h@gmail.com', NULL, '$2y$10$yP/jCdm365s6Ym9BZQlqGOO.VfFj1dv7laHsYwsWasWsg3dkkbTtu', 'ADMIN', NULL, '2020-07-04 02:40:17', '2020-07-04 02:40:17'),
+(2, 'Har', 'g@gmail.com', NULL, '$2y$10$w2zFq4UJI16mAYntKPF0NOM458kvxog8muroUcWaFOosp1fqv/ZX6', 'USER', NULL, '2020-07-04 04:51:26', '2020-07-04 04:51:26'),
+(3, 'vishnu', 'vishnu@gmail.com', NULL, '$2y$10$aOUsaGl/mBizkQ79P0KudepWR0FQkXDJXC7MpSFm3hls5qe2D0ii.', 'USER', NULL, '2020-07-08 07:14:29', '2020-07-08 07:14:29'),
+(4, 'tyredekho', 'tyredekho@gmail.com', NULL, 'tyredekho', 'USER', NULL, '2020-07-08 08:39:31', '2020-07-08 08:39:31'),
+(5, 'hariom', 'hariom@gmail.com', NULL, '$2y$10$iP9delv4P9obhRyuuSU.UO1PciAn7V9kjQgmELGUaUVmsKxZRlTt6', 'USER', NULL, '2020-07-08 08:40:46', '2020-07-08 08:40:46');
 
 --
 -- Indexes for dumped tables
@@ -287,38 +288,31 @@ ALTER TABLE `users`
 --
 ALTER TABLE `failed_jobs`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-
 --
 -- AUTO_INCREMENT for table `oauth_clients`
 --
 ALTER TABLE `oauth_clients`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
 --
 -- AUTO_INCREMENT for table `oauth_personal_access_clients`
 --
 ALTER TABLE `oauth_personal_access_clients`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-COMMIT;
-
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -13,3 +13,8 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+Route::get('/allList', 'ApisController@getAllList'); 
+Route::get('getTaskInfo/{id}','ApisController@getTaskInfo');
+Route::post('addTask','ApisController@addTask');
+ 

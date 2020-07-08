@@ -12,16 +12,14 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-     <a class="navbar-brand" href="#">TaskSiteName</a>
+     <a class="navbar-brand" href="#">Task CMS</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="{{route('user_login')}}">User</a></li>
-      <li><a href="{{route('login')}}">Admin</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">contact</a></li>
-      <li><a href="#">policy</a></li>
+      <li><a href="{{route('login')}}">User</a></li>
+      <li><a href="{{route('login')}}">Admin</a></li> 
+      <li> <a href="{{url('logout')}}">Logout</a></li>
+      
     </ul>
   </div>
 </nav>
@@ -29,10 +27,7 @@
 <div class="container">
   
     @yield('content')
-  
-  <div class="footer navbar-bottom text-center">
-<h6> this is copyright@:2020 </h6>
-  </div>
+   
 </div>
 </body>
 </html>
