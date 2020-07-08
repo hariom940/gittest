@@ -80,9 +80,14 @@ class UserController extends Controller
 
     public function dashboard()
     {
-        $value = Session::get('USER_ID');
-        if (isset($value)) {
-            $tasks = Task::all();
+        $userId = Session::get('USER_ID');
+        if (isset($userId)) {
+            $userType = Session::get('USER_TYPE');
+            if($userType == 'USER'){
+                $tasks = Task::where('created_by', $userId)->get();  
+            }else{
+                $tasks = Task::all();
+            } 
             return view('dashboard', compact('tasks'));
         } else {
             return Redirect::to("login")->withSuccess('Opps! You do not have access');
@@ -108,13 +113,14 @@ class UserController extends Controller
 
     public function insert(Request $req)
     {
-
+        $userId = Session::get('USER_ID'); 
         $tasks = new Task();
 
         $tasks->name = $req->input('name');
         $tasks->task_name = $req->input('task_name');
         $tasks->end_date = $req->input('due_date');
         $tasks->status = $req->input('status');
+        $tasks->created_by = $userId;
         // $tasks->assign_to =  $req->input('name');  
         // $tasks->created_by = $req->input('status');  
         $tasks->sub_task  = implode(',', $req->input('sub_task'));

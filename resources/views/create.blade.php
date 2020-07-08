@@ -19,7 +19,7 @@
 				</ul>
 			</div>
 			@endif
-			<form action="{{route('insert')}}" method="post">
+			<form action="{{route('insert')}}" method="post" autocomplete="off">
 				{{ csrf_field() }}
 				<div class="row">
 
@@ -104,6 +104,15 @@
 	
 <script>
 $(document).ready(function(){
+
+	$( "#date" ).datepicker({
+		dateFormat: "yy-mm-dd",
+		minDate: 2
+	});
+	$( "#due_date" ).datepicker({
+		dateFormat: "yy-mm-dd",
+		minDate: 2
+	});
 	var num = 1;
   $(".addSubTask").click(function(){ 
   	 $('.subtaskdiv').append('<div class="form-group row subtask_'+num+'"><div class="col-sm-4"> </div><div class="col-sm-4"><input type="text" class="form-control" placeholder="sub task" name="sub_task[]"></div><div class="col-sm-1"><p><span onclick="removeTask('+num+')" class="glyphicon glyphicon-minus" ></span></p> </div></div>  ');

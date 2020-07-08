@@ -20,10 +20,10 @@
             <th scope="col">Serial No.</th>
             <th scope="col">Task Name</th>
             <th scope="col">Person Name</th>
-            <th scope="col">Due Date</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
             <th scope="col">Status</th>
-            <th scope="col">Sub Task</th>
-            <th scope="col">Date</th>
+            <th scope="col">Sub Task</th> 
             <th scope="col" width="20%">Action</th>
           </tr>
         </thead>
@@ -33,7 +33,8 @@
           <tr>
             <th scope="row">{{$loop->index+1 }}</th>
             <td>{{$task->task_name}}</td>
-            <td>{{$task->name}}</td>
+            <td>{{$task->name}}</td>  
+            <td>{{$task->start_date}}</td>
             <td>{{$task->end_date}}</td>
             <td> 
             @if($task->status =='1')         
@@ -42,8 +43,7 @@
                   Complete      
             @endif
             </td>
-            <td>{{$task->sub_task}}</td>
-            <td>{{$task->start_date}}</td>
+            <td>{{$task->sub_task}}</td> 
             <td>
               <form method="post" action="{{ route('delete',$task->id)}}" class="delete_form">
                 {{ csrf_field() }}

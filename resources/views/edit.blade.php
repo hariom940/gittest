@@ -116,6 +116,14 @@
 	
 <script>
 $(document).ready(function(){
+	$( "#date" ).datepicker({
+		dateFormat: "yy-mm-dd",
+		minDate: 2
+	});
+	$( "#due_date" ).datepicker({
+		dateFormat: "yy-mm-dd",
+		minDate: 2
+	});
 	var num = '<?php echo count($subTaskArray)+1;?>';
   $(".addSubTask").click(function(){ 
   	 $('.subtaskdiv').append('<div class="form-group row subtask_'+num+'"><div>&nbsp;</div><div class="col-sm-1"> </div>	<label class="col-sm-3" for="address"> </label><div class="col-sm-4"><input type="text" class="form-control" placeholder="sub task" name="sub_task[]"></div><div class="col-sm-1"><p><span onclick="removeTask('+num+')" class="glyphicon glyphicon-minus" ></span></p> </div></div>  ');
