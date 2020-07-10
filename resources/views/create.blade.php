@@ -76,7 +76,7 @@
 						<label  class="col-sm-3" for="email">Select Status</label>
 						<div class="col-sm-4">
 							<div class="dropdown">
-								<select class="form-control" name ="status">
+								<select class="form-control" name ="status" required>
 									<option value="">Status</option>
 									<option value="1">pending</option>
 									<option value="2">complete</option>
@@ -107,11 +107,11 @@ $(document).ready(function(){
 
 	$( "#date" ).datepicker({
 		dateFormat: "yy-mm-dd",
-		minDate: 2
+		minDate: 0
 	});
 	$( "#due_date" ).datepicker({
 		dateFormat: "yy-mm-dd",
-		minDate: 2
+		minDate: 0
 	});
 	var num = 1;
   $(".addSubTask").click(function(){ 

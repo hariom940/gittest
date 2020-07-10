@@ -29,8 +29,3 @@ Route::get('edit/{id}','UserController@edit')->name('edit');
 Route::get('view/{id}','UserController@view')->name('view');
 Route::get('update/{id}','UserController@update')->name('update');
 
-//====task user route===/
-Route::get('user_login','Taskcontroller@index')->name('user_login');
-Route::post('user_post-login', 'Taskcontroller@userlogin'); 
-Route::get('user_logout', 'Taskcontroller@logout');
-Route::post('show{id}', 'Taskcontroller@create')->name('show');

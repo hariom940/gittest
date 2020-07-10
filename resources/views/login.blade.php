@@ -9,7 +9,7 @@
         <div class="container-fluid">
           <div class="row ml">
             <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">Admin Login</h3>
+              <h3 class="login-heading mb-4">welcome !!</h3>
                <form action="{{url('post-login')}}" method="POST" id="logForm">
  
                  {{ csrf_field() }}

@@ -7,7 +7,7 @@
 	</div>
 	<div class="panel panel-primary">
 		<div class="panel-heading">
-			Create New Student
+			 Student Detail
 		</div>
 		<div class="panel-body">
 			@if ($errors->any())

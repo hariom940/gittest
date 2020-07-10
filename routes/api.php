@@ -17,4 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/allList', 'ApisController@getAllList'); 
 Route::get('getTaskInfo/{id}','ApisController@getTaskInfo');
 Route::post('addTask','ApisController@addTask');
- 
+
+ Route::post('delete','ApisController@delete');
+Route::post('update/{id}','ApisController@update');
+Route::post('login', 'ApisController@login');
+
+Route::any('register', 'ApisController@register');
+
+Route::group(['middleware' => 'auth:api'], function(){
+Route::post('details', 'ApisController@details');
+});

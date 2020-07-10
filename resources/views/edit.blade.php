@@ -8,7 +8,7 @@
 	</div>
 	<div class="panel panel-primary">
 		<div class="panel-heading">
-			Create New Student
+			Edit Student
 		</div>
 		<div class="panel-body">
 			@if ($errors->any())
@@ -28,7 +28,7 @@
 						<div class="col-sm-1"> </div>
 						<label class="col-sm-3" for="name"> Name </label>
 						 <div class="col-sm-4">
-							<input type="text" class="form-control" placeholder="Enter person Name" name="name" id="name" value="{{ $tasks->name }}">
+							<input type="text" class="form-control" placeholder="Enter person Name" name="name" id="name" value="{{ $tasks->name }}" required>
 						</div>
 					</div> 
 
@@ -37,7 +37,7 @@
 						<div class="col-sm-1"> </div>
 						<label class="col-sm-3" for="task_name">Task Name</label>
 						 <div class="col-sm-4">
-							<input type="text" class="form-control" placeholder="Enter task Name" name="task_name" id="task_name" value="{{ $tasks->task_name }}">
+							<input type="text" class="form-control" placeholder="Enter task Name" name="task_name" id="task_name" value="{{ $tasks->task_name }}" required>
 						</div>
 					</div>    
 				<?php 
@@ -69,7 +69,7 @@
 						<div class="col-sm-1"> </div>
 						<label class="col-sm-3" for="date">Date</label>
 						<div class="col-sm-4">
-							<input type="text" class="form-control" name="date" id="date" value="{{ $tasks->start_date }}">
+							<input type="text" class="form-control" name="date" id="date" value="{{ $tasks->start_date }}" required>
 						</div>
 					</div> 
 
@@ -77,7 +77,7 @@
 						<div class="col-sm-1"> </div>
 						<label  class="col-sm-3" for="email">Due Date</label>
 						 <div class="col-sm-4">
-							<input type="text" class="form-control" placeholder="Email" name="due_date" id="due_date" value="{{ $tasks->end_date }}">
+							<input type="text" class="form-control" placeholder="Email" name="due_date" id="due_date" value="{{ $tasks->end_date }}" required>
 						</div>
 					</div>	
 
@@ -87,11 +87,11 @@
 						 
 						<div class="col-sm-4">
 							<div class="dropdown">
-								<select class="form-control" name ="status">
+								<select class="form-control" name ="status" id="status">
 									<option value="">Status</option>
-									<option value="1">pending</option>
-									<option value="2">complete</option>
-									<option value="3">overdue</option>
+									<option value="1" @if ($tasks->status == '1') selected="selected" @endif >pending</option>
+									<option value="2" @if ($tasks->status == '2') selected="selected" @endif >complete</option>
+									<option value="3" @if ($tasks->status == '3') selected="selected" @endif>overdue</option>
 								</select> 
 							</div>
 						</div>
@@ -118,11 +118,11 @@
 $(document).ready(function(){
 	$( "#date" ).datepicker({
 		dateFormat: "yy-mm-dd",
-		minDate: 2
+		minDate: 0
 	});
 	$( "#due_date" ).datepicker({
 		dateFormat: "yy-mm-dd",
-		minDate: 2
+		minDate: 0
 	});
 	var num = '<?php echo count($subTaskArray)+1;?>';
   $(".addSubTask").click(function(){ 

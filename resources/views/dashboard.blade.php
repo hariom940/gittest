@@ -37,11 +37,23 @@
             <td>{{$task->start_date}}</td>
             <td>{{$task->end_date}}</td>
             <td> 
-            @if($task->status =='1')         
-                  Pending       
-            @elseif($task->status =='2')
-                  Complete      
-            @endif
+            <?php
+                if($task->status !=2){
+                 $curdate = time();
+                 $mydate = strtotime($task->end_date);         
+                  if($curdate > $mydate)
+                  {
+                    echo "overdue";
+                  }else{
+                      echo "Pending";
+                  } 
+                } 
+                else{
+                  echo "complete";
+                }
+
+
+              ?>
             </td>
             <td>{{$task->sub_task}}</td> 
             <td>

@@ -19,9 +19,9 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="{{route('login')}}">User</a></li>
-      <li><a href="{{route('login')}}">Admin</a></li> 
+      <li><a href="{{route('login')}}">Login</a></li>
       <li> <a href="{{url('logout')}}">Logout</a></li>
+       <li><a href="#">AboutUs</a></li>
       
     </ul>
   </div>
