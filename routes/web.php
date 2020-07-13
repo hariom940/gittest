@@ -13,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
- 
+ Route::get('home',function(){
+    return view ('welcome');
+ });
+
   Route::get('/', 'UserController@index')->name('login');
   Route::get('login', 'UserController@index')->name('login');
   Route::post('post-login', 'UserController@postLogin'); 
@@ -29,3 +32,23 @@ Route::get('edit/{id}','UserController@edit')->name('edit');
 Route::get('view/{id}','UserController@view')->name('view');
 Route::get('update/{id}','UserController@update')->name('update');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

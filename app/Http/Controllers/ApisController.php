@@ -14,21 +14,7 @@ use App\Task;
 
 class ApisController extends Controller
 {
-
-
     public $successStatus = 200;
-
-       public function login(){ 
-        if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){ 
-        dd('aa');
-            $user = Auth::user(); 
-            $success['token'] =  $user->createToken('MyApp')-> accessToken; 
-            return response()->json(['success' => $success], $this-> successStatus); 
-        } 
-        else{ 
-            return response()->json(['error'=>'Unauthorised'], 401); 
-        } 
-    }
 
     public function getAllList()   
     {
@@ -109,29 +95,99 @@ return response()->json( $tasks);
 
 }
 
-public function register(Request $request) 
-        { 
-            $validator = Validator::make($request->all(), [ 
-                // 'name' => 'required', 
-                'email' => 'required|email', 
-                'user_password' => 'required', 
-                
-            ]);
-    if ($validator->fails()) { 
-                return response()->json(['error'=>$validator->errors()], 401);            
-            }
-    $input = $request->all(); 
-            $input['user_password'] = bcrypt($input['user_password']); 
-            $user = User::create($input); 
-            $success['token'] =  $user->createToken('MyApp')-> accessToken; 
-            $success['name'] =  $user->email;
-    return response()->json(['success'=>$success], $this-> successStatus); 
-        }
 
  public function details() 
     { 
         $user = Auth::user(); 
         return response()->json(['success' => $user], $this-> successStatus); 
     } 
+/*
+
+      public function login(){
+       if(Auth::attempt(['email' => request('email'), 'user_password' => request('user_password')])){
+           $user = Auth::user();
+           $success['token'] =  $user->createToken('MyApp')->accessToken;
+           return response()->json(['success' => $success], $this->successStatus);
+       }
+       else{
+        
+           return response()->json(['error'=>'Unauthorised'], 401);
+       }
+   }
+   */
+
+
+
+   public function register(Request $request)
+   {
+       $validator = Validator::make($request->all(), [
+           'name' => 'required',
+           'email' => 'required|email',
+           'user_password' => 'required',
+           //'c_password' => 'required|same:password',
+       ]);
+       if ($validator->fails()) {
+           return response()->json(['error'=>$validator->errors()], 401);            
+       }
+       $input = $request->all();
+       $input['user_password'] = bcrypt($input['user_password']);
+       $user = User::create($input);
+       $success['token'] =  $user->createToken('MyApp')->accessToken;
+       $success['name'] =  $user->name;
+       
+
+       return response()->json(['success'=>$success], $this->successStatus);
+   }
+
+   public function getDetails()
+   {
+       $user = Auth::user();
+       return response()->json(['success' => $user], $this->successStatus);
+   }
+
+
+   
+  public function postLogin(Request $request)
+  {
+    // Validations
+    $rules = [
+      'email'=>'required|email',
+      'password'=>'required|min:5'
+    ];
+    $validator = Validator::make($request->all(), $rules);
+    if ($validator->fails()) {
+      // Validation failed
+      return response()->json([
+        'message' => $validator->messages(),
+      ]);
+    } else {
+      // Fetch User
+      $user = User::where('email',$request->email)->first();
+      if($user) {
+        // Verify the password
+        if( password_verify($request->user_password, $user->user_password) ) {
+          // Update Token
+          $postArray = ['api_token' => $this->apiToken];
+          $login = User::where('email',$request->email)->update($postArray);
+          
+          if($login) {
+            return response()->json([
+              'name'         => $user->name,
+              'email'        => $user->email,
+              'access_token' => $this->apiToken,
+            ]);
+          }
+        } else {
+          return response()->json([
+            'message' => 'Invalid Password',
+          ]);
+        }
+      } else {
+        return response()->json([
+          'message' => 'User not found',
+        ]);
+      }
+    }
+  }
 
 }

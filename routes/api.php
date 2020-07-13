@@ -20,10 +20,20 @@ Route::post('addTask','ApisController@addTask');
 
  Route::post('delete','ApisController@delete');
 Route::post('update/{id}','ApisController@update');
-Route::post('login', 'ApisController@login');
 
-Route::any('register', 'ApisController@register');
+
+
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+
+   return $request->user();
+
+});
+
+Route::post('login', 'ApisController@login');
+Route::post('register', 'ApisController@register');
+
 
 Route::group(['middleware' => 'auth:api'], function(){
-Route::post('details', 'ApisController@details');
+Route::post('get-details', 'ApisController@getDetails');
+
 });

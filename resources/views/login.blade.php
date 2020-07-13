@@ -15,7 +15,7 @@
                  {{ csrf_field() }}
  
                 <div class="form-label-group">
-                  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" >
+                  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required>
                   <label for="inputEmail">Email address</label>
  
                   @if ($errors->has('email'))
@@ -24,7 +24,7 @@
                 </div> 
  
                 <div class="form-label-group">
-                  <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password">
+                  <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
                   <label for="inputPassword">Password</label>
                    
                   @if ($errors->has('password'))
