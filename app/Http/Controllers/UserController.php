@@ -33,33 +33,23 @@ class UserController extends Controller
     public function postLogin(Request $request)
     {
 
-        // select 
-        request()->validate([
-            'email' => 'required',
-            'password' => 'required',
+        $request->validate([
+            'email' => 'required|string|email',
+            'password' => 'required|string' 
         ]);
-        $credentials = $request->only('email', 'password');
-        //  echo "<pre>"; print_r($credentials['password']); die;
-        //
+        $credentials = request(['email', 'password']);
+        if(!Auth::attempt($credentials))
+            return response()->json([
+                'message' => 'Unauthorized'
+            ], 401);
         $getUserInfo = User::where('email', $credentials['email'])->first()->toArray();
-        // $getUserPwd = User::where('email','vishnu@gmail.com')->get()->toArray();
-        //  DB::table('users')->where('name', 'John')->first();
-
-        // $hashed = Hash::make('123456');  
-        if (\Illuminate\Support\Facades\Hash::check($credentials['password'], $getUserInfo['user_password']) == false) {
-            return Redirect::to("login")->withSuccess('Oppes! You have entered invalid credentials');
-        } else {
-            /* session([
-                'USER_ID' =>  $getUserInfo['id'],
-                'USER_TYPE' =>  $getUserInfo['user_type']  
-            ]);  */
-            Session::put([
-                'USER_ID' =>  $getUserInfo['id'],
-                'USER_TYPE' =>  $getUserInfo['user_type'],
-                'USER_NAME' =>  $getUserInfo['name'],
-            ]);
-            return Redirect::to("dashboard");
-        }
+        Session::put([
+            'USER_ID' =>  $getUserInfo['id'],
+            'USER_TYPE' =>  $getUserInfo['user_type'],
+            'USER_NAME' =>  $getUserInfo['name'],
+        ]);
+        return Redirect::to("dashboard");
+        
     }
 
     public function postRegistration(Request $request)

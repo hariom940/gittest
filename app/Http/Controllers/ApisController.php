@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 use Validator, Redirect, Response;
 use Session;
 use App\Task;
+use Carbon\Carbon;
 
 class ApisController extends Controller
 {
@@ -120,23 +121,20 @@ return response()->json( $tasks);
 
    public function register(Request $request)
    {
-       $validator = Validator::make($request->all(), [
-           'name' => 'required',
-           'email' => 'required|email',
-           'user_password' => 'required',
-           //'c_password' => 'required|same:password',
-       ]);
-       if ($validator->fails()) {
-           return response()->json(['error'=>$validator->errors()], 401);            
-       }
-       $input = $request->all();
-       $input['user_password'] = bcrypt($input['user_password']);
-       $user = User::create($input);
-       $success['token'] =  $user->createToken('MyApp')->accessToken;
-       $success['name'] =  $user->name;
-       
-
-       return response()->json(['success'=>$success], $this->successStatus);
+        $request->validate([
+          'name' => 'required|string',
+          'email' => 'required|string|email|unique:users',
+          'password' => 'required|string|confirmed'
+      ]);
+      $user = new User([
+          'name' => $request->name,
+          'email' => $request->email,
+          'password' => bcrypt($request->password)
+      ]);
+      $user->save();
+      return response()->json([
+          'message' => 'Successfully created user!'
+      ], 201);
    }
 
    public function getDetails()
@@ -145,7 +143,30 @@ return response()->json( $tasks);
        return response()->json(['success' => $user], $this->successStatus);
    }
 
-
+   public function login(Request $request){  
+        $request->validate([
+          'email' => 'required|string|email',
+          'password' => 'required|string' 
+      ]);
+      $credentials = request(['email', 'password']);
+      if(!Auth::attempt($credentials))
+          return response()->json([
+              'message' => 'Unauthorized'
+          ], 401);
+      $user = $request->user();
+      $tokenResult = $user->createToken('Personal Access Token');
+      $token = $tokenResult->token;
+      if ($request->remember_me)
+          $token->expires_at = Carbon::now()->addWeeks(1);
+      $token->save();
+      return response()->json([
+          'access_token' => $tokenResult->accessToken,
+          'token_type' => 'Bearer',
+          'expires_at' => Carbon::parse(
+              $tokenResult->token->expires_at
+          )->toDateTimeString()
+      ]);
+  }
    
   public function postLogin(Request $request)
   {

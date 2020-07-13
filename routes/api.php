@@ -34,6 +34,22 @@ Route::post('register', 'ApisController@register');
 
 
 Route::group(['middleware' => 'auth:api'], function(){
-Route::post('get-details', 'ApisController@getDetails');
-
+Route::post('get-details', 'ApisController@getDetails'); 
 });
+
+ // password_confirmation
+
+
+/* Route::group([
+   'prefix' => 'auth'
+], function () {
+   Route::post('login', 'AuthController@login');
+   Route::post('signup', 'AuthController@signup');
+ 
+   Route::group([
+     'middleware' => 'auth:api'
+   ], function() {
+       Route::get('logout', 'AuthController@logout');
+       Route::get('user', 'AuthController@user');
+   });
+}); */
