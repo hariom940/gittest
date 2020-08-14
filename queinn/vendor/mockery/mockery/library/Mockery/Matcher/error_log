@@ -1,0 +1,12 @@
+[31-May-2018 07:24:12 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/Contains.php on line 23
+[31-May-2018 07:24:13 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/MustBe.php on line 23
+[31-May-2018 07:24:16 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/AnyOf.php on line 23
+[31-May-2018 07:24:20 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/Any.php on line 23
+[31-May-2018 07:24:23 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/HasKey.php on line 23
+[31-May-2018 07:24:35 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/Subset.php on line 23
+[31-May-2018 07:24:36 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/Ducktype.php on line 23
+[31-May-2018 07:24:38 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/HasValue.php on line 23
+[31-May-2018 07:24:51 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/Type.php on line 23
+[31-May-2018 07:24:53 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/Not.php on line 23
+[31-May-2018 07:24:57 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/NotAnyOf.php on line 23
+[31-May-2018 07:25:02 America/Chicago] PHP Fatal error:  Class 'Mockery\Matcher\MatcherAbstract' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Matcher/Closure.php on line 23

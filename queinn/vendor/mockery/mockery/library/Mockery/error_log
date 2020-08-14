@@ -1,0 +1,4 @@
+[31-May-2018 07:20:45 America/Chicago] PHP Fatal error:  Interface 'Mockery\ExpectationInterface' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Expectation.php on line 23
+[31-May-2018 07:21:17 America/Chicago] PHP Fatal error:  Class 'Mockery\Expectation' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/VerificationExpectation.php on line 5
+[31-May-2018 07:21:45 America/Chicago] PHP Fatal error:  Interface 'Mockery\ExpectationInterface' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/CompositeExpectation.php on line 23
+[31-May-2018 07:23:17 America/Chicago] PHP Fatal error:  Interface 'Mockery\MockInterface' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Mock.php on line 25

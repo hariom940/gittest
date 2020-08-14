@@ -1,0 +1,12 @@
+[19-Jun-2018 11:59:26 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QuickBooks_Loader' not found in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/Estimate/EstimateLine.php:15
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/Estimate/EstimateLine.php on line 15
+[19-Jun-2018 16:44:17 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QuickBooks_Loader' not found in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/Estimate/EstimateLine.php:15
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/Estimate/EstimateLine.php on line 15
+[19-Jun-2018 21:30:22 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QuickBooks_Loader' not found in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/Estimate/EstimateLine.php:15
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/Estimate/EstimateLine.php on line 15

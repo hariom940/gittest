@@ -1,0 +1,16 @@
+[18-Jun-2018 15:05:21 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QuickBooks_Loader' not found in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Payments/Transaction.php:22
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Payments/Transaction.php on line 22
+[18-Jun-2018 16:29:27 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QuickBooks_Loader' not found in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Payments/Transaction.php:22
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Payments/Transaction.php on line 22
+[18-Jun-2018 18:39:39 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QuickBooks_Loader' not found in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Payments/Transaction.php:22
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Payments/Transaction.php on line 22
+[01-Jul-2018 01:03:15 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QuickBooks_Loader' not found in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Payments/Transaction.php:22
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Payments/Transaction.php on line 22

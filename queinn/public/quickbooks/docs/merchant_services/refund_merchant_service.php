@@ -1,0 +1,195 @@
+<?php
+
+/**
+ * Example of connecting PHP to the QuickBooks Merchant Service
+ * 
+ * * IMPORTANT * 
+ * In order to use this example, you'll need to go through the Intuit 
+ * application registration process first! This is documented here: 
+ * 	http://wiki.consolibyte.com/wiki/doku.php/quickbooks_qbms_integration
+ * 
+ * @package QuickBooks
+ * @subpackage Documentation
+ */
+//session_start();
+require_once 'config.php';
+// Show errors
+//error_reporting(E_ALL | E_STRICT);
+//ini_set('display_errors', true);
+
+// Plain text output
+header('Content-Type: text/plain');
+
+// Include the QuickBooks files
+require_once '../../QuickBooks.php';
+
+// If you want to log requests/responses to a database, you can provide a 
+//	database DSN-style connection string here
+$dsn = null;
+// $dsn = 'mysql://root:@localhost/quickbooks_merchantservice';
+
+// There are two methods of attaching an application to QuickBooks Merchant 
+//	Services. Intuit provides a 'Hosted' model, and a 'Desktop' model. The 
+//	'Hosted' model provides additional security benefits and is designed for 
+//	web applications, while the 'Desktop' model is easier to set up and 
+//	designed for desktop applications. 
+// 
+// Either the 'Hosted' or the 'Desktop' model can be used if you're developing 
+//	a web application. 
+// 
+// If you're using the 'Hosted' model, you'll need to provide the full path to 
+//	the key/certificate you/Intuit generates here. Otherwise, you can pass a 
+//	null. This file should have the private key you generated concatenated to 
+//	the beginning of the file. So the file contents should look something like: 
+//  
+//	-----BEGIN RSA PRIVATE KEY-----
+//	... bla bla bla lots of stuff here ...
+//	-----END RSA PRIVATE KEY-----
+//	-----BEGIN CERTIFICATE-----
+//	... bla bla bla lots of stuff here ...
+//	-----END CERTIFICATE-----
+// 
+// If you're using the 'Hosted' model, you should see the additional 
+//	documentation about how to set up your certificate here: 
+//		http://wiki.consolibyte.com/wiki/doku.php/quickbooks_qbms_integration
+//$path_to_private_key_and_certificate = '/Users/keithpalmerjr/Projects/QuickBooks/QuickBooks/dev/test_qbms.pem';
+//$path_to_private_key_and_certificate = '/path/doesnt/exist.pem'; 		// This should trigger an error
+//$path_to_private_key_and_certificate = null;							// If you're using the DESKTOP model
+$path_to_private_key_and_certificate = null;
+
+// This is your login ID that Intuit assignes you during the application 
+//	registration process.
+$application_login = ($quickbook_application_login != '') ? $quickbook_application_login : 'QBwooticket1.www.vanagain.com';
+//$application_login = 'QBwooticket1.www.vanagain.com';
+
+// This is the connection ticket assigned to you during the application 
+//	registration process. To conform to Intuit security practices, you are 
+//	*required* to store this key *encrypted* and not in plain-text. 
+//	
+//	The ticket below is provided as an example, you should *not* store your 
+//	connection ticket in plain text as shown below. You should store it in your 
+//	database or in a separate file, outside of the web server document root, 
+//	encrypted with a crypto library such as {@link http://www.php.net/mcrypt}.
+$connection_ticket = ($quickbook_connection_ticket != '') ? $quickbook_connection_ticket : 'SDK-TGT-61-0nnNtTwCyytH$jrPYhshNg';
+//$connection_ticket = 'SDK-TGT-61-0nnNtTwCyytH$jrPYhshNg';
+
+// Create an instance of the MerchantService object 
+$MS = new QuickBooks_MerchantService(
+	$dsn, 
+	$path_to_private_key_and_certificate, 
+	$application_login,
+	$connection_ticket);
+
+// If you're using a Intuit QBMS development account, you must set this to true! 
+$MS->useTestEnvironment(false);
+
+// If you want to see the full XML input/output, you can turn on debug mode
+$MS->useDebugMode(false);
+
+/*
+There are several methods available in the QuickBooks_MerchantService class. 
+The most common methods are described below: 
+
+ - authorize() 
+    This authorizes a given amount against the a credit card. It is important 
+    to note that this *does not* actually charge the credit card, it just 
+    "reserves" the amount on the credit card and guarentees that if you do a 
+    capture() on the same credit card within X days, the funds will be 
+    available. 
+    
+    Authorizations are used in situations where you want to ensure the money 
+    will be availble, but not actually charge the card yet. For instance, if 
+    you have an online shopping cart, you should authorize() the credit card 
+    when the customer checks out. However, because you might not have the item 
+    in stock, or there might be other problems with the order, you don't want 
+    to actually charge the card yet. Once the order is all ready to ship and 
+    you've made sure there's no problems with it, you should issue a capture() 
+   	using the returned transaction information from the authorize() to actually 
+   	charge the credit card. 
+    
+ - capture()   
+    
+ - charge()
+ 
+ - void()
+ 
+ - refund()
+ 
+ - voidOrRefund() 
+ 
+ - openBatch()
+ 
+ - closeBatch()
+
+*/
+
+/**
+ * There are a number of test credit card numbers you can use while testing
+ * 
+ * Master Card 			5105105105105100
+ * Master Card 			5555555555554444
+ * VISA 				4222222222222
+ * VISA 				4111111111111111
+ * VISA 				4012888888881881
+ * American Express 	378282246310005
+ * American Express		371449635398431
+ * Amex Corporate 		378734493671000
+ * Diners Club 			38520000023237
+ * Diners Club 			30569309025904
+ * Discover 			6011111111111117
+ * Discover 			6011000990139424
+ */
+$first_name = isset($_POST['first_name']) && $_POST['first_name']!='' ? $_POST['first_name'] : '';
+$last_name = isset($_POST['last_name']) && $_POST['last_name']!='' ? $_POST['last_name'] : '';
+
+$card_number = isset($_POST['card_number']) && $_POST['card_number']!='' ? $_POST['card_number'] : '';
+
+$expDate = isset($_POST['card_expiry']) && $_POST['card_expiry']!='' ? $_POST['card_expiry'] : '';
+$expDate = explode('/',$expDate);
+$cvv = isset($_POST['card_cvv']) && $_POST['card_cvv']!='' ? $_POST['card_cvv'] : '';
+$address = isset($_POST['address']) && $_POST['address']!='' ? $_POST['address'].', ' : '';
+$address .= isset($_POST['town']) && $_POST['town']!='' ? $_POST['town'] : '';
+$postcode = isset($_POST['postcode']) && $_POST['postcode']!='' ? $_POST['postcode'] : '';
+
+// Now, let's create a credit card object, and authorize an amount agains the card
+$name = $first_name.' '.$last_name;
+$number = $card_number;
+$expyear = $expDate[1];
+$expmonth = $expDate[0];
+$address = $address;
+$postalcode = $postcode;
+$cvv = $cvv;
+
+/**
+ * There are also some test configurations you can use to simulate certain 
+ * errors occuring. You pass these test configuration constants in as the $name 
+ * parameter to the credit card to trigger various errors/warnings. 
+ */
+// $name = QuickBooks_MerchantService::TEST_AVSZIPCVVFAIL;		// Simulate a sucessful transaction that failed all AVS and CVV checks, but was still processed (i.e. your gateway is set up to accept everything)
+// $name = QuickBooks_MerchantService::TEST_COMMUNICATIONERROR;	// Simulate a general communication error
+
+// Create the CreditCard object
+$Card = new QuickBooks_MerchantService_CreditCard($name, $number, $expyear, $expmonth, $address, $postalcode, $cvv);
+
+// We're going to authorize $295.00
+$amount = $_POST['amount'];
+
+// We can issue refunds too... 
+if ($Transaction = $MS->refund($Card, $amount))
+{
+	//print('Card refunded $' . $amount . ' dollars!' . "\n");
+	//print_r($Transaction);
+    $arr = $Transaction->toArray();
+    echo json_encode(array('success'=>true, 'data'=>$arr));
+    mysqli_close($con);
+    exit;
+}
+else
+{
+    echo json_encode(array('error'=> $MS->errorNumber() . ': ' . $MS->errorMessage()));
+    mysqli_close($con);
+    exit;
+	//print('An error occured during refund: ' . $MS->errorNumber() . ': ' . $MS->errorMessage() . "\n");
+}
+
+

@@ -1,0 +1,4 @@
+[31-May-2018 07:21:59 America/Chicago] PHP Fatal error:  Interface 'Dotenv\Exception\ExceptionInterface' not found in /home1/vanagain/public_html/vendor/vlucas/phpdotenv/src/Exception/ValidationException.php on line 10
+[31-May-2018 07:22:16 America/Chicago] PHP Fatal error:  Interface 'Dotenv\Exception\ExceptionInterface' not found in /home1/vanagain/public_html/vendor/vlucas/phpdotenv/src/Exception/InvalidFileException.php on line 10
+[31-May-2018 07:23:06 America/Chicago] PHP Fatal error:  Interface 'Dotenv\Exception\ExceptionInterface' not found in /home1/vanagain/public_html/vendor/vlucas/phpdotenv/src/Exception/InvalidCallbackException.php on line 10
+[31-May-2018 07:23:52 America/Chicago] PHP Fatal error:  Interface 'Dotenv\Exception\ExceptionInterface' not found in /home1/vanagain/public_html/vendor/vlucas/phpdotenv/src/Exception/InvalidPathException.php on line 10

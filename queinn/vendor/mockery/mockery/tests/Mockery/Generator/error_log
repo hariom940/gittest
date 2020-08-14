@@ -1,0 +1,2 @@
+[31-May-2018 07:24:03 America/Chicago] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home1/vanagain/public_html/vendor/mockery/mockery/tests/Mockery/Generator/DefinedTargetClassTest.php on line 7
+[31-May-2018 07:24:25 America/Chicago] PHP Fatal error:  Class 'PHPUnit_Framework_TestCase' not found in /home1/vanagain/public_html/vendor/mockery/mockery/tests/Mockery/Generator/MockConfigurationTest.php on line 5

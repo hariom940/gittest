@@ -1,0 +1,200 @@
+[18-Jun-2018 15:28:12 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_queueing.php on line 21
+[18-Jun-2018 15:28:12 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_queueing.php on line 21
+[18-Jun-2018 15:29:01 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror_qwc.php on line 19
+[18-Jun-2018 15:29:01 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror_qwc.php on line 19
+[18-Jun-2018 16:32:18 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_serv...', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_minimal.php(58): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[18-Jun-2018 16:35:22 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_serv...', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector.php(245): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[18-Jun-2018 16:39:38 America/New_York] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_point_of_sale.php on line 31
+[18-Jun-2018 16:39:38 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_point_of_sale.php on line 31
+[18-Jun-2018 16:41:11 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_sql', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mysql_mirror.php(72): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[18-Jun-2018 17:11:06 America/New_York] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_import.php on line 42
+[18-Jun-2018 17:11:06 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_import.php on line 42
+[18-Jun-2018 16:11:38 America/Chicago] PHP Warning:  require_once(QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mssql_mirror.php on line 17
+[18-Jun-2018 16:11:38 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'QuickBooks.php' (include_path='.:/opt/php71/lib/php:/Users/kpalmer/Projects/QuickBooks') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mssql_mirror.php on line 17
+[18-Jun-2018 17:13:30 America/New_York] PHP Warning:  require_once(/Users/kpalmer/Projects/QuickBooks/QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_auth.php on line 27
+[18-Jun-2018 17:13:30 America/New_York] PHP Fatal error:  require_once(): Failed opening required '/Users/kpalmer/Projects/QuickBooks/QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_auth.php on line 27
+[18-Jun-2018 16:25:27 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror.php on line 23
+[18-Jun-2018 16:25:27 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror.php on line 23
+[18-Jun-2018 17:47:02 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_serv...', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_minimal.php(58): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[18-Jun-2018 18:18:36 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_sql', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mysql_mirror.php(72): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[18-Jun-2018 18:32:59 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_serv...', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector.php(245): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[18-Jun-2018 18:52:49 America/New_York] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_import.php on line 42
+[18-Jun-2018 18:52:49 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_import.php on line 42
+[18-Jun-2018 17:53:29 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_qwc.php on line 19
+[18-Jun-2018 17:53:29 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_qwc.php on line 19
+[18-Jun-2018 19:25:05 America/New_York] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_point_of_sale.php on line 31
+[18-Jun-2018 19:25:05 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_point_of_sale.php on line 31
+[18-Jun-2018 19:56:50 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_qwc.php on line 19
+[18-Jun-2018 19:56:50 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_qwc.php on line 19
+[18-Jun-2018 19:57:36 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_queueing.php on line 21
+[18-Jun-2018 19:57:36 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_queueing.php on line 21
+[18-Jun-2018 20:58:15 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_serv...', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_minimal.php(58): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[18-Jun-2018 20:59:28 America/New_York] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_point_of_sale.php on line 31
+[18-Jun-2018 20:59:28 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_point_of_sale.php on line 31
+[18-Jun-2018 20:01:13 America/Chicago] PHP Warning:  require_once(QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mssql_mirror.php on line 17
+[18-Jun-2018 20:01:13 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'QuickBooks.php' (include_path='.:/opt/php71/lib/php:/Users/kpalmer/Projects/QuickBooks') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mssql_mirror.php on line 17
+[18-Jun-2018 20:52:56 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror.php on line 23
+[18-Jun-2018 20:52:56 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror.php on line 23
+[18-Jun-2018 21:59:05 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_sql', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mysql_mirror.php(72): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[18-Jun-2018 22:52:27 America/New_York] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_import.php on line 42
+[18-Jun-2018 22:52:27 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_import.php on line 42
+[19-Jun-2018 01:03:22 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_sql', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mysql_mirror.php(72): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[19-Jun-2018 03:36:31 America/New_York] PHP Warning:  require_once(/Users/kpalmer/Projects/QuickBooks/QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_auth.php on line 27
+[19-Jun-2018 03:36:31 America/New_York] PHP Fatal error:  require_once(): Failed opening required '/Users/kpalmer/Projects/QuickBooks/QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_auth.php on line 27
+[19-Jun-2018 03:05:31 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror.php on line 23
+[19-Jun-2018 03:05:31 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror.php on line 23
+[19-Jun-2018 03:13:10 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror_qwc.php on line 19
+[19-Jun-2018 03:13:10 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror_qwc.php on line 19
+[19-Jun-2018 04:18:33 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_serv...', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector.php(245): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[19-Jun-2018 09:16:58 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_sql', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mysql_mirror.php(72): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[19-Jun-2018 12:08:08 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror_qwc.php on line 19
+[19-Jun-2018 12:08:08 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror_qwc.php on line 19
+[19-Jun-2018 13:34:30 America/New_York] PHP Warning:  require_once(/Users/kpalmer/Projects/QuickBooks/QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_auth.php on line 27
+[19-Jun-2018 13:34:30 America/New_York] PHP Fatal error:  require_once(): Failed opening required '/Users/kpalmer/Projects/QuickBooks/QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_auth.php on line 27
+[19-Jun-2018 15:54:40 America/Chicago] PHP Warning:  require_once(QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mssql_mirror.php on line 17
+[19-Jun-2018 15:54:40 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'QuickBooks.php' (include_path='.:/opt/php71/lib/php:/Users/kpalmer/Projects/QuickBooks') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mssql_mirror.php on line 17
+[19-Jun-2018 16:54:12 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_qwc.php on line 19
+[19-Jun-2018 16:54:12 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_qwc.php on line 19
+[19-Jun-2018 17:47:11 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_queueing.php on line 21
+[19-Jun-2018 17:47:11 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_queueing.php on line 21
+[19-Jun-2018 19:44:18 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_sql', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mysql_mirror.php(72): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[19-Jun-2018 21:44:29 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_sql', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mysql_mirror.php(72): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[19-Jun-2018 22:46:02 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_sql', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mysql_mirror.php(72): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[29-Jun-2018 16:16:40 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror.php on line 23
+[29-Jun-2018 16:16:40 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_pgsql_mirror.php on line 23
+[30-Jun-2018 01:58:57 America/Chicago] PHP Warning:  require_once(../QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_queueing.php on line 21
+[30-Jun-2018 01:58:57 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_queueing.php on line 21
+[01-Jul-2018 11:23:11 America/Chicago] PHP Warning:  require_once(QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mssql_mirror.php on line 17
+[01-Jul-2018 11:23:11 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'QuickBooks.php' (include_path='.:/opt/php71/lib/php:/Users/kpalmer/Projects/QuickBooks') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_mssql_mirror.php on line 17
+[01-Jul-2018 20:12:17 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_serv...', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector.php(245): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289
+[02-Jul-2018 04:56:52 America/New_York] PHP Warning:  require_once(/Users/kpalmer/Projects/QuickBooks/QuickBooks.php): failed to open stream: No such file or directory in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_auth.php on line 27
+[02-Jul-2018 04:56:52 America/New_York] PHP Fatal error:  require_once(): Failed opening required '/Users/kpalmer/Projects/QuickBooks/QuickBooks.php' (include_path='.:/opt/php71/lib/php') in /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector_auth.php on line 27
+[13-Jul-2018 10:16:01 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php:289
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php(206): QuickBooks_Driver_Sql_Mysql->_connect('localhost', 3306, 'root', 'root', 'quickbooks_serv...', true, 0)
+#1 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Factory.php(97): QuickBooks_Driver_Sql_Mysql->__construct('mysql://root:ro...', Array)
+#2 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(232): QuickBooks_Driver_Factory::create('mysql://root:ro...', Array, Array, 1)
+#3 /home1/vanagain/public_html/public/quickbooks/QuickBooks/Utilities.php(628): QuickBooks_Utilities::driverFactory('mysql://root:ro...', Array)
+#4 /home1/vanagain/public_html/public/quickbooks/docs/web_connector/example_web_connector.php(245): QuickBooks_Utilities::initialized('mysql://root:ro...')
+#5 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysql.php on line 289

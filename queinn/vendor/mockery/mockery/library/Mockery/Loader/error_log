@@ -1,0 +1,2 @@
+[31-May-2018 07:24:54 America/Chicago] PHP Fatal error:  Interface 'Mockery\Loader\Loader' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Loader/EvalLoader.php on line 8
+[31-May-2018 07:24:58 America/Chicago] PHP Fatal error:  Interface 'Mockery\Loader\Loader' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Loader/RequireLoader.php on line 8

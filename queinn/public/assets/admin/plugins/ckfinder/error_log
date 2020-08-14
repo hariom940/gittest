@@ -1,0 +1,24 @@
+[19-Jun-2018 03:42:11 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php:82
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php on line 82
+[19-Jun-2018 08:08:10 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php:82
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php on line 82
+[19-Jun-2018 09:30:24 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php:82
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php on line 82
+[20-Jun-2018 05:53:48 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php:82
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php on line 82
+[23-Jul-2018 01:57:26 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php:82
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php on line 82
+[12-Aug-2018 07:47:35 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function resolveUrl() in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php:82
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/assets/admin/plugins/ckfinder/config.php on line 82

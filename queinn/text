@@ -1,0 +1,34 @@
+https://developers.google.com/web/tools/lighthouse/audits/optimize-images
+
+.no-search {
+  background: #ae0701;
+  padding: 20px;
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+}
+.no-result-found h3 {
+  background: #ae0701;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.no-result-found h4 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.no-result-found form {
+  background: #ae0701;
+  padding: 10px 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.page-loader img{
+  width:120px;
+  height: 120px;
+}

@@ -1,0 +1,2 @@
+[31-May-2018 07:24:22 America/Chicago] PHP Fatal error:  Interface 'Mockery\Generator\Generator' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Generator/CachingGenerator.php on line 5
+[31-May-2018 07:24:49 America/Chicago] PHP Fatal error:  Interface 'Mockery\Generator\Generator' not found in /home1/vanagain/public_html/vendor/mockery/mockery/library/Mockery/Generator/StringManipulationGenerator.php on line 7

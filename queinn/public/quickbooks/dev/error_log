@@ -1,0 +1,438 @@
+[18-Jun-2018 22:06:07 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_reports.php(18): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[18-Jun-2018 22:08:32 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_db.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[18-Jun-2018 22:50:12 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined class constant 'IDS_ADD' in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php on line 27
+[18-Jun-2018 22:55:32 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_assert.php(18): QuickBooks_IPP->authenticate('keith@consoliby...', 'password', 'app token here')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[18-Jun-2018 22:56:57 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_discounts.php(20): QuickBooks_IPP->authenticate('support@consoli...', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[18-Jun-2018 22:58:23 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_shipmethods.php(20): QuickBooks_IPP->authenticate('', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[18-Jun-2018 23:00:08 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_renameapp.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[18-Jun-2018 23:00:21 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_accounts.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[18-Jun-2018 23:00:38 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_getuserinfo.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[18-Jun-2018 23:01:27 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function QuickBooks_IPP_Parser::parseIDS(), 7 passed in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php on line 119 and exactly 9 expected in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php:246
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php(119): QuickBooks_IPP_Parser->parseIDS('<?xml version="...', 'Query', NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php on line 246
+[19-Jun-2018 00:01:37 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_errors.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 00:08:49 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined class constant 'IDS_ADD' in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php on line 27
+[19-Jun-2018 00:15:05 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_db.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 00:18:29 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_shipmethods.php(20): QuickBooks_IPP->authenticate('', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 00:21:30 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_assert.php(18): QuickBooks_IPP->authenticate('keith@consoliby...', 'password', 'app token here')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 00:22:46 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_discounts.php(20): QuickBooks_IPP->authenticate('support@consoli...', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 00:23:12 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function QuickBooks_IPP_Parser::parseIDS(), 7 passed in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php on line 119 and exactly 9 expected in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php:246
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php(119): QuickBooks_IPP_Parser->parseIDS('<?xml version="...', 'Query', NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php on line 246
+[19-Jun-2018 00:27:09 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_accounts.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 00:28:27 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_items.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 00:45:46 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_items.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 01:16:40 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_idsrealm.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 01:32:06 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_discounts.php(20): QuickBooks_IPP->authenticate('support@consoli...', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 01:38:16 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_reports.php(18): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 01:41:04 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_reports.php(18): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 01:44:04 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_shipmethods.php(20): QuickBooks_IPP->authenticate('', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 02:09:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_getuserinfo.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 02:14:39 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_accounts.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 02:30:16 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_db.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 02:40:05 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_customers.php(20): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 02:55:53 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_customers.php(20): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 03:39:22 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_assert.php(18): QuickBooks_IPP->authenticate('keith@consoliby...', 'password', 'app token here')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 03:47:03 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_renameapp.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 03:48:21 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_errors.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 04:52:41 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_getuserinfo.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 05:07:50 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_errors.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 06:07:35 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_customers.php(20): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 06:15:43 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_idsrealm.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 06:22:44 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_renameapp.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 07:05:29 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_errors.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 08:09:10 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_discounts.php(20): QuickBooks_IPP->authenticate('support@consoli...', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 08:31:38 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_items.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 10:21:50 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_shipmethods.php(20): QuickBooks_IPP->authenticate('', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 10:53:32 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_db.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 11:02:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_customers.php(20): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 11:25:02 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined class constant 'IDS_ADD' in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php on line 27
+[19-Jun-2018 12:30:24 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_getuserinfo.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 12:33:15 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function QuickBooks_IPP_Parser::parseIDS(), 7 passed in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php on line 119 and exactly 9 expected in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php:246
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php(119): QuickBooks_IPP_Parser->parseIDS('<?xml version="...', 'Query', NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php on line 246
+[19-Jun-2018 12:34:02 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_accounts.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 13:02:48 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_db.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 14:22:20 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_reports.php(18): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 14:27:39 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_assert.php(18): QuickBooks_IPP->authenticate('keith@consoliby...', 'password', 'app token here')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 14:37:27 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_assert.php(18): QuickBooks_IPP->authenticate('keith@consoliby...', 'password', 'app token here')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 14:41:13 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function QuickBooks_IPP_Parser::parseIDS(), 7 passed in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php on line 119 and exactly 9 expected in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php:246
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php(119): QuickBooks_IPP_Parser->parseIDS('<?xml version="...', 'Query', NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php on line 246
+[19-Jun-2018 15:02:25 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_items.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 15:07:37 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_reports.php(18): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 15:13:13 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_renameapp.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 15:49:09 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_items.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[19-Jun-2018 16:22:43 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined class constant 'IDS_ADD' in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php on line 27
+[19-Jun-2018 16:46:48 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function QuickBooks_IPP_Parser::parseIDS(), 7 passed in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php on line 119 and exactly 9 expected in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php:246
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php(119): QuickBooks_IPP_Parser->parseIDS('<?xml version="...', 'Query', NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php on line 246
+[21-Jun-2018 04:03:57 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_errors.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[21-Jun-2018 04:04:57 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_shipmethods.php(20): QuickBooks_IPP->authenticate('', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[21-Jun-2018 04:06:31 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_idsrealm.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[21-Jun-2018 04:09:31 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined class constant 'IDS_ADD' in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php on line 27
+[21-Jun-2018 04:14:18 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_accounts.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[22-Jun-2018 13:34:30 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_customers.php(20): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[22-Jun-2018 13:38:59 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_discounts.php(20): QuickBooks_IPP->authenticate('support@consoli...', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[27-Jun-2018 03:13:28 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_db.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[27-Jun-2018 08:17:49 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_items.php(17): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[27-Jun-2018 23:23:31 America/Chicago] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function QuickBooks_IPP_Parser::parseIDS(), 7 passed in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php on line 119 and exactly 9 expected in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php:246
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_parse.php(119): QuickBooks_IPP_Parser->parseIDS('<?xml version="...', 'Query', NULL, NULL, NULL, NULL, NULL)
+#1 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP/Parser.php on line 246
+[28-Jun-2018 10:23:34 America/Chicago] PHP Fatal error:  Uncaught Error: Undefined class constant 'IDS_ADD' in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php:27
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_ordering.php on line 27
+[28-Jun-2018 12:57:34 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_shipmethods.php(20): QuickBooks_IPP->authenticate('', '', '')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[28-Jun-2018 14:36:34 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ids_accounts.php(16): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[26-Jul-2018 20:02:19 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_idsrealm.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[29-Aug-2018 14:03:23 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_idsrealm.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[30-Aug-2018 04:28:32 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_idsrealm.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481
+[31-Aug-2018 17:03:12 America/Chicago] PHP Fatal error:  Uncaught Error: Call to a member function IPP() on null in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php:1481
+Stack trace:
+#0 /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php(334): QuickBooks_IPP->_request(NULL, 'ipp', 'https://workpla...', 'API_Authenticat...', '<?xml version="...')
+#1 /home1/vanagain/public_html/public/quickbooks/dev/dev_ipp_idsrealm.php(15): QuickBooks_IPP->authenticate('keith@consoliby...', 'password42', 'tex3r7hwifx6cci...')
+#2 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/IPP.php on line 1481

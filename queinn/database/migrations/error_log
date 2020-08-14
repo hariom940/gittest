@@ -1,0 +1,4 @@
+[31-May-2018 07:02:08 America/Chicago] PHP Fatal error:  Class 'Illuminate\Database\Migrations\Migration' not found in /home1/vanagain/public_html/database/migrations/2018_01_03_071509_create_blog_categories_table.php on line 7
+[31-May-2018 07:10:14 America/Chicago] PHP Fatal error:  Class 'Illuminate\Database\Migrations\Migration' not found in /home1/vanagain/public_html/database/migrations/2017_04_29_055558_create_categories_table.php on line 7
+[31-May-2018 07:10:22 America/Chicago] PHP Fatal error:  Class 'Illuminate\Database\Migrations\Migration' not found in /home1/vanagain/public_html/database/migrations/2014_10_12_100000_create_password_resets_table.php on line 7
+[31-May-2018 07:10:29 America/Chicago] PHP Fatal error:  Class 'Illuminate\Database\Migrations\Migration' not found in /home1/vanagain/public_html/database/migrations/2018_01_09_123234_create_attribute_values_table.php on line 7

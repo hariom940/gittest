@@ -1,0 +1,12 @@
+[19-Jun-2018 03:21:31 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QuickBooks_Loader' not found in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/CreditMemo/CreditMemoLine.php:20
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/CreditMemo/CreditMemoLine.php on line 20
+[19-Jun-2018 10:21:16 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QuickBooks_Loader' not found in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/CreditMemo/CreditMemoLine.php:20
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/CreditMemo/CreditMemoLine.php on line 20
+[19-Jun-2018 15:09:25 America/Chicago] PHP Fatal error:  Uncaught Error: Class 'QuickBooks_Loader' not found in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/CreditMemo/CreditMemoLine.php:20
+Stack trace:
+#0 {main}
+  thrown in /home1/vanagain/public_html/public/quickbooks/QuickBooks/QBXML/Object/CreditMemo/CreditMemoLine.php on line 20

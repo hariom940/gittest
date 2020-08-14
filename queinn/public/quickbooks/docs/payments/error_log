@@ -1,0 +1,36 @@
+[18-Jun-2018 09:10:31 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 306
+[18-Jun-2018 09:10:31 America/Chicago] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 363
+[18-Jun-2018 09:10:31 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 368
+[18-Jun-2018 09:10:31 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 369
+[18-Jun-2018 09:10:31 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 370
+[18-Jun-2018 09:10:31 America/Chicago] PHP Fatal error:  Error Num.: 
+Error Msg.:
+SQL: SHOW TABLES 
+Database: /example_app_ipp_v3 in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 374
+[18-Jun-2018 15:05:34 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 306
+[18-Jun-2018 15:05:34 America/Chicago] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 363
+[18-Jun-2018 15:05:34 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 368
+[18-Jun-2018 15:05:34 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 369
+[18-Jun-2018 15:05:34 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 370
+[18-Jun-2018 15:05:34 America/Chicago] PHP Fatal error:  Error Num.: 
+Error Msg.:
+SQL: SHOW TABLES 
+Database: /example_app_ipp_v3 in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 374
+[18-Jun-2018 16:59:19 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 306
+[18-Jun-2018 16:59:19 America/Chicago] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 363
+[18-Jun-2018 16:59:19 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 368
+[18-Jun-2018 16:59:19 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 369
+[18-Jun-2018 16:59:19 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 370
+[18-Jun-2018 16:59:19 America/Chicago] PHP Fatal error:  Error Num.: 
+Error Msg.:
+SQL: SHOW TABLES 
+Database: /example_app_ipp_v3 in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 374
+[20-Jun-2018 03:05:46 America/Chicago] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 306
+[20-Jun-2018 03:05:46 America/Chicago] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 363
+[20-Jun-2018 03:05:46 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 368
+[20-Jun-2018 03:05:46 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 369
+[20-Jun-2018 03:05:46 America/Chicago] PHP Warning:  QuickBooks_Driver_Sql_Mysqli::_query(): Couldn't fetch mysqli in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 370
+[20-Jun-2018 03:05:46 America/Chicago] PHP Fatal error:  Error Num.: 
+Error Msg.:
+SQL: SHOW TABLES 
+Database: /example_app_ipp_v3 in /home1/vanagain/public_html/public/quickbooks/QuickBooks/Driver/Sql/Mysqli.php on line 374
